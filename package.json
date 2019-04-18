@@ -1,0 +1,86 @@
+{
+  "_development": true,
+  "_from": "git://github.com/brandonocasey/browserify-shim.git#configable-inscript",
+  "_id": "browserify-shim@3.8.14",
+  "_inBundle": false,
+  "_integrity": "sha1-7nkoqeywvd6n8Vp3oD2ObIBX/xQ=",
+  "_location": "/browserify-shim",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "browserify-shim@git://github.com/brandonocasey/browserify-shim.git#configable-inscript",
+    "name": "browserify-shim",
+    "escapedName": "browserify-shim",
+    "rawSpec": "git://github.com/brandonocasey/browserify-shim.git#configable-inscript",
+    "saveSpec": "git://github.com/brandonocasey/browserify-shim.git#configable-inscript",
+    "fetchSpec": "git://github.com/brandonocasey/browserify-shim.git",
+    "gitCommittish": "configable-inscript"
+  },
+  "_requiredBy": [
+    "/videojs-spellbook"
+  ],
+  "_resolved": "git://github.com/brandonocasey/browserify-shim.git#7cf191f69b6f4ab281b4f77572036b16bf2fb36d",
+  "_spec": "browserify-shim@git://github.com/brandonocasey/browserify-shim.git#configable-inscript",
+  "_where": "/Users/michaelprendergast/golang/src/github.com/SpalkLtd/spalk-live-sync-api/js/videojs-spalk-commentator/node_modules/videojs-spellbook",
+  "author": {
+    "name": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "url": "thlorenz.com"
+  },
+  "bugs": {
+    "url": "https://github.com/thlorenz/browserify-shim/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "exposify": "~0.5.0",
+    "mothership": "~0.2.0",
+    "rename-function-calls": "~0.1.0",
+    "resolve": "~0.6.1",
+    "through": "~2.3.4",
+    "xtend": "~4.0.1"
+  },
+  "deprecated": false,
+  "description": "Makes CommonJS-incompatible modules browserifyable.",
+  "devDependencies": {
+    "browserify": ">= 13",
+    "jsdom": "^5.4.2",
+    "ncp": "~0.5.0",
+    "proxyquire": "~0.5.1",
+    "request": "~2.12.0",
+    "rimraf": "~2.2.6",
+    "tap": "^1.1.0",
+    "test-peer-range": "^1.0.1"
+  },
+  "homepage": "https://github.com/thlorenz/browserify-shim#readme",
+  "keywords": [
+    "browserify",
+    "browserify-transform",
+    "shim",
+    "global",
+    "globals",
+    "transform",
+    "window",
+    "commonjs"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "browserify-shim",
+  "peerDependencies": {
+    "browserify": ">= 2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/browserify-shim.git"
+  },
+  "scripts": {
+    "dependency-with-global": "npm install opener && cd ./examples/dependency-with-global && npm install && node build.js && opener index.html",
+    "dependency-with-global-diag": "npm install opener && cd ./examples/dependency-with-global && npm install && node build-diag.js && opener index.html",
+    "expose-jquery": "npm install opener && cd ./examples/expose-jquery && npm install && node build.js && opener index.html",
+    "expose-jquery-diag": "npm install opener && cd ./examples/expose-jquery && npm install && node build-diag.js && opener index.html",
+    "shim-jquery": "npm install opener && cd ./examples/shim-jquery && npm install && node build.js && opener index.html",
+    "shim-jquery-diag": "npm install opener && cd ./examples/shim-jquery && npm install && node build-diag.js && opener index.html",
+    "test": "test-peer-range browserify",
+    "test-main": "tap test/*.js && tap test/shim/*.js"
+  },
+  "version": "3.8.14"
+}
